@@ -1,0 +1,28 @@
+Code:-
+
+class StringPalindrome {
+    public static void main(String[] args) {
+        String str = "Hello World";
+        str.toLowerCase();
+        int vowelsCount=0;
+        int consonantCount=0;
+        
+        for(int i=0; i<str.length(); i++)
+        {
+            if(str.charAt(i)=='a' || str.charAt(i)=='e' || str.charAt(i)=='i'|| str.charAt(i)=='o' || str.charAt(i)=='u')
+            {
+                vowelsCount++;
+            }
+            else
+            {
+               consonantCount++;   
+            }
+        }
+        System.out.println("Vowels count is: "+ vowelsCount);
+        System.out.println("Consonant count is: "+consonantCount);
+    }
+}
+
+Output:
+Vowels count is: 3
+Consonant count is: 8
