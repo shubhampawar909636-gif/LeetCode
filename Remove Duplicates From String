@@ -1,0 +1,19 @@
+Code:-
+
+class StringPalindrome {
+    public static void main(String[] args) {
+        String str = "Java is programming language";
+        StringBuilder sb = new StringBuilder();
+        for(char c: str.toCharArray())
+        {
+            if(sb.indexOf(String.valueOf(c)) == -1)
+            {
+                sb.append(c);
+            }
+        }
+        System.out.println(sb.toString());
+    }
+}
+
+Output:
+Jav isprogmnlue
