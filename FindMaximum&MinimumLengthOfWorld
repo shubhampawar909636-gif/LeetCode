@@ -1,0 +1,46 @@
+Code:-
+
+class FindMaximumLengthOfWorld {
+    public static void main(String[] args) {
+        String input[] = {"hello", "world", "abc"};
+        
+        String str = input[0];
+        
+        for(int i=1; i<input.length; i++)
+        {
+            if(str.length() < input[i].length())
+            {
+                str = input[i];
+            }
+        }
+        System.out.println(str);
+    }
+}
+
+Output:
+hello
+
+-----------------------------------------------------------------------
+Mimimum
+-----------
+Code:
+
+class FindMaximumLengthOfWorld {
+    public static void main(String[] args) {
+        String input[] = {"hello", "world", "abc"};
+        
+        String str = input[0];
+        
+        for(int i=1; i<input.length; i++)
+        {
+            if(str.length() > input[i].length())
+            {
+                str = input[i];
+            }
+        }
+        System.out.println(str);
+    }
+}
+
+Output:
+abc
