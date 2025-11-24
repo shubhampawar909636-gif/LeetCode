@@ -1,0 +1,18 @@
+Code:-
+
+class ConcatenateString {
+    public static void main(String[] args) {
+        String input []= {"hello", "world"};
+        String str = "";
+        
+        for(int i=0; i<input.length; i++)
+        {
+            str = str + input[i];
+            
+        }
+        System.out.println(str);
+    }
+}
+
+Output:
+helloworld
