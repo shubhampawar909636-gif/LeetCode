@@ -1,0 +1,21 @@
+Code:-
+
+class FindStringEndingWithSpecificCharacter {
+    public static void main(String[] args) {
+        
+        String input[] = {"hello", "world", "abc"};
+        char c = 'd';
+        
+        for(int i=0; i<input.length;i++)
+        {
+            if(input[i].charAt(input[i].length()-1) == c)
+            {
+                System.out.println(input[i]);
+            }
+        }
+      
+    }
+}
+
+Output:
+world
