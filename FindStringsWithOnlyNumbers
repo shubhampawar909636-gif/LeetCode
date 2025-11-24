@@ -1,0 +1,31 @@
+Code:-
+
+class FindStringsWithOnlyNumbers {
+    public static void main(String[] args) {
+        
+        String input[] = {"123", "abc", "456"};
+        String result[] = new String[input.length];
+        int j=0;
+        for(int i=0; i<input.length; i++)
+        {
+            
+            if(Character.isDigit(input[i].charAt(i)))
+            {
+                result[j] = input[i];
+                j++;
+            }
+            
+        }
+        
+        for(int i=0; i<j; i++)
+        {
+            System.out.println(result[i]);
+        }
+       
+        
+    }
+}
+
+Output:
+123
+456
