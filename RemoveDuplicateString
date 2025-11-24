@@ -1,0 +1,18 @@
+Code:
+
+public class RemoveDuplicateString {
+
+	public static void main(String[] args) {
+		String input[] = {"hello", "hello", "world"};
+	    
+		Set<String> myStringHashSet = new HashSet<>();
+	    
+	    for(String i : input)
+	    {
+	    	myStringHashSet.add(i);
+	    }
+	    System.out.println(myStringHashSet);
+
+		}
+
+	}
