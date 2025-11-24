@@ -1,0 +1,30 @@
+Code:-
+
+class ContainingSubString {
+    public static void main(String[] args) {
+        
+        String input [] = {"hello", "world", "abc", "following"};
+        String str = "ll";
+        String result[] = new String[input.length];
+        int j=0;
+        
+        for(int i=0; i<input.length; i++)
+        {
+            if(input[i].contains(str))
+            {
+                result[j] = input[i];
+                j++;
+            }
+        }
+        
+        for(int i=0; i<j;i++)
+        {
+            System.out.println(result[i]);
+        }
+      
+    }
+}
+
+Output:
+hello
+following
