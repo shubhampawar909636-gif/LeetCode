@@ -1,0 +1,25 @@
+Code:
+
+class FindCommonString {
+    public static void main(String[] args) {
+        String input1 [] = {"hello", "world"};
+        String input2 [] = {"world", "abc"};
+        String str = "";
+        
+        for(int i=0; i<input1.length; i++)
+        {
+            for(int j=0; j<input2.length; j++)
+            {
+                if(input1[i].equals(input2[j]))
+                {
+                    str = input1[i];
+                }
+            }
+        }
+        System.out.println(str);
+        
+    }
+}
+
+Output:
+world
