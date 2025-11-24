@@ -1,0 +1,22 @@
+Code:-
+
+public class SortArrayAlphabetically {
+
+	public static void main(String[] args) {
+		String input[] = {"Hello", "World", "Abc"};
+	       
+	       Arrays.sort(input);
+	       
+	       for(int i=0; i<input.length; i++)
+	       {
+	       System.out.println(input[i]);
+	       }
+
+	}
+
+}
+
+Output:
+Abc
+Hello
+World
