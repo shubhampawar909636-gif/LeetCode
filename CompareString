@@ -1,0 +1,22 @@
+Code:
+
+class CompareString {
+    public static void main(String[] args) {
+        
+        String input = "hello";
+        String input1 = "world";
+        
+        if(input.equals(input1))
+        {
+            System.out.println(1);
+        }
+        else
+        {
+            System.out.println(-1);
+        }
+        
+    }
+}
+
+Output:
+-1
