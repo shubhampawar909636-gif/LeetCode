@@ -1,0 +1,29 @@
+Code:
+
+class StringIsNumeric {
+    public static void main(String[] args) {
+        
+        String input = "123";
+        boolean bool= false;
+        
+        for(int i=0; i<input.length();i++)
+        {
+            char c = input.charAt(i);
+            
+            if(Character.isDigit(c))
+            {
+                bool = true;
+            }
+            else
+            {
+                bool = false;
+                break;
+            }
+        }
+        System.out.println(bool);
+        
+    }
+}
+
+Output:
+true
