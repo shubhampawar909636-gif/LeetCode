@@ -1,0 +1,25 @@
+Code:
+
+class RemovePunctuation {
+    public static void main(String[] args) {
+        
+        String input = "Hello! World!";
+        boolean bool = true;
+        String ans = "";
+        
+        for(int i=0; i<input.length(); i++)
+        {
+            if(input.charAt(i) != '!')
+            {
+                ans = ans + input.charAt(i);
+            }
+            
+        }
+        
+        System.out.println(ans);
+        
+    }
+}
+
+Output:
+Hello World
