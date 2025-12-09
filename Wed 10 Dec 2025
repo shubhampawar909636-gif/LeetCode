@@ -1,0 +1,112 @@
+Program1: SquareOfAllDigitsInNumber
+-----------------------------------
+
+Welcome. In this kata, you are asked to square every digit of a number and concatenate them.
+
+For example, if we run 9119 through the function, 811181 will come out, because 92 is 81 and 12 is 1. (81-1-1-81)
+
+Example #2: An input of 765 will/should return 493625 because 72 is 49, 62 is 36, and 52 is 25. (49-36-25)
+
+Note: The function accepts an integer and returns an integer.
+
+Happy Coding!
+
+----------------------------------------------
+Solution:
+----------
+public class SquareDigit {
+
+  public int squareDigits(int n) {
+    String conStr = "";
+      String s = String.valueOf(n);
+    for(int i=0; i<s.length();i++)
+      {
+      
+      char ch = s.charAt(i);
+      
+      int digit = Character.getNumericValue(ch);
+      
+      int square = digit*digit;
+      conStr+= String.valueOf(square);
+    }
+    
+    int ans = Integer.parseInt(conStr);
+    
+    return ans;
+  }
+}
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Program2: HighestAndLowest
+--------------------------
+
+In this little assignment you are given a string of space separated numbers, and have to return the highest and lowest number.
+
+Examples
+highAndLow("1 2 3 4 5") // return "5 1"
+highAndLow("1 2 -3 4 5") // return "5 -3"
+highAndLow("1 9 3 4 -5") // return "9 -5"
+----------------------------------------------
+Solution:
+----------
+public class Kata {
+  public static String highAndLow(String numbers) {
+    String str[] = numbers.split(" ");
+   int arr[] = new int[str.length];
+   int max = 0;
+   
+   
+   for(int i=0; i<arr.length; i++)
+   {
+       arr[i] = Integer.parseInt(str[i]);
+   }
+   int min = arr[0];
+   for(int i=0; i<arr.length; i++)
+   {
+       if(max < arr[i])
+       {
+           max = arr[i];
+           
+       }
+       else if (min > arr[i])
+       {
+           min = arr[i];
+       }
+   }
+   
+     return max + " " + min;
+  }
+}
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+Program3: ShortestWord
+--------------------------
+
+Simple, given a string of words, return the length of the shortest word(s).
+
+String will never be empty and you do not need to account for different data types.
+
+Example:
+s = "bitcoin take over the world maybe who knows perhaps" // return 3
+----------------------------------------------
+Solution:
+----------
+
+public class Kata {
+    public static int findShort(String s) {
+       String str[] = s.split(" ");
+      int ans = 0;
+      int min = str[0].length();
+      for(int i=0; i<str.length; i++)
+        {
+            if(min > str[i].length())
+              {
+              min = str[i].length();
+            }
+      }
+      return min;
+    }
+}
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
